@@ -112,11 +112,58 @@ O(V+E)
 
 ## 动态规划(Dynamic programming)
 原理:先解决子问题，再逐步解决大问题  
+局限:  
+- 仅能考虑YesOrNo不能考虑部分
+- 仅当每个子问题都是离散的，即不依赖于其他子问题时才可用
+- 不可能包含两个以上的子背包
 
+## K最近邻算法(k-nearest neighbors algorithm)
+特征提取:  
+- 毕达哥拉斯公式计算距离
+- 余弦相似度比较角度
+应用:
+- OCR(optical character recognition)
+- spam email filter
 
+## 其他
 
-## D&C
+#### D&C
 Divide and Conquer 分而治之
+
+#### 并行算法(Parallel computing)
+数个内核  
+无法线性提速的原因:
+- 并行性管理开销
+- 负载均衡
+
+#### 分布式算法(Distributed algorithm)
+数百个内核  
+MapReduce
+
+#### 概率型算法(Probabilistic Algorithm)
+常见的概率型算法有布隆过滤器(Bloom Filter)和HyperLogLog;  
+布隆过滤器是一种概率型数据结构，可能出现错报的情况，但不可能出现漏报的情况;
+
+#### SHA算法(secure hash algorithm)
+局部不敏感  
+目前最安全的密码散列函数为bcrypt  
+应用:
+- 比较文件
+- 检查密码
+
+#### 局部敏感的散列算法
+Simhash  
+对字符串做细微的修改，Simhash生成的散列值也只存在细微的差别  
+应用:
+- 检查两项内容的相似程度
+
+#### Diffie-Hellman 密钥交换
+使用两个密钥:公钥和私钥; 双方无需知道加密算法
+
+#### 线性规划
+Simplex算法  
+用于在给定约束条件下最大限度地改善指定的指标
+
 
 
 
