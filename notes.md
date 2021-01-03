@@ -128,7 +128,8 @@ O(V+E)
 ## K最近邻算法(k-nearest neighbors algorithm)
 特征提取:  
 - 毕达哥拉斯公式计算距离
-- 余弦相似度比较角度
+- 余弦相似度比较角度  
+
 应用:
 - OCR(optical character recognition)
 - spam email filter
